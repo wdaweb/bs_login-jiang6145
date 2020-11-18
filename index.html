@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('https://picsum.photos/1920/1080/?random=1') no-repeat center/cover;
+      }
+      .form-wrap {
+        width: 420px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .user-icon {
+        width: 120px;
+        height: 120px;
+        background-color: #17a3b89b;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 50%;
+      }
+      .user-icon::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f007';
+        font-weight: 500;
+        font-size: 58px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+      }
+      .user-name,
+      .password {
+        position: relative;
+      }
+      .user-name > input,
+      .password > input {
+        text-indent: 2rem;
+      }
+      .user-name::before,
+      .password::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+      .user-name::before {
+        content: '\f007';
+      }
+
+      .password::before {
+        content: '\f023';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrap p-5 rounded-lg">
+      <div class="user-icon rounded-circle"></div>
+      <h1 class="text-center my-4 text-white-50">Sign In</h1>
+      <form>
+        <div class="form-row mb-4">
+          <div class="col-12">
+            <label class="user-name w-100 mb-4">
+              <input type="text" class="user-name form-control form-control-lg" placeholder="Username" />
+            </label>
+            <label class="password w-100 mb-4">
+              <input type="text" class="form-control form-control-lg" placeholder="Password" />
+            </label>
+
+            <button type="submit" class="btn btn-lg btn-info w-100">Login</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6">
+            <input type="checkbox" id="customControlInline" />
+            <label for="customControlInline" class="text-white">Remember me</label>
+          </div>
+          <div class="col-6 text-right">
+            <a href="#" class="text-white">Forgot Password?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Bootstrap -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+  </body>
+</html>
